@@ -1,0 +1,190 @@
+/* Employees.css */
+
+.employees-container {
+  margin: 20px;
+}
+
+.employees-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employees-table th,
+.employees-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.employees-table th {
+  background-color: #f2f2f2;
+}
+
+.employees-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.employees-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+
+.edit-employee-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-employee-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.save-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+
+.add-employee-button {
+  background-color: #0056b3;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.add-employee-button:hover {
+  background-color: #064486;
+  /* Darker Green */
+}
+
+
+
+
+
+.create-employee-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-employee-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-employee-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.save-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.save-button:active {
+  background-color: #0a3664;
+}
+
+
+/* Add this CSS to your stylesheet */
+
+.edit-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+}
+
+.delete-button,
+.edit-link {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #cccccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.delete-button:hover,
+.edit-link:hover {
+  background-color: #f0f0f0;
+  border-color: #999999;
+}
+
+.delete-button:focus,
+.edit-link:focus {
+  outline: none;
+}

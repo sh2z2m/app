@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front5-deployment
+  labels:
+    app: front5
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front5
+  template:
+    metadata:
+      labels:
+        app: front5
+    spec:
+      nodeSelector: # Sélection du nœud spécifique
+        kubernetes.io/hostname: master1 # Sélection du nœud maître 1
+      containers:
+      - name: frontend
+        image: shazzam/client1:latest # Remplacez avec votre image Docker du frontend
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: front5-service
+spec:
+  selector:
+    app: front5
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
