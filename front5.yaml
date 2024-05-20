@@ -21,7 +21,6 @@ spec:
         image: shazzam/client1:latest # Remplacez avec votre image Docker du frontend
         ports:
         - containerPort: 80
-
 ---
 apiVersion: v1
 kind: Service
